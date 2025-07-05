@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bryan Shufelt - MySpace Tribute</title>
+    <style>
+        body {
+            background: url('./bryan4.jpg'), #003366;
+            color: #fff;
+            font-family: 'Tahoma', 'Verdana', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .myspace-container {
+            width: 1000px;
+            margin: 40px auto;
+            background: #222;
+            border: 4px solid #00ccff;
+            box-shadow: 0 0 20px #00ccff88;
+            border-radius: 10px;
+            padding: 30px;
+            display: flex;
+            gap: 30px;
+        }
+        .left-column, .right-column {
+            display: flex;
+            flex-direction: column;
+        }
+        .left-column {
+            width: 340px;
+            min-width: 300px;
+            flex-shrink: 0;
+        }
+        .right-column {
+            flex: 1;
+        }
+        .profile-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 20px;
+        }
+        .profile-pic {
+            width: 180px;
+            height: 220px;
+            background: #444;
+            border: 3px solid #fff;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px #00ccff88;
+        }
+        .profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .profile-info h1 {
+            font-size: 2.2em;
+            color: #00ccff;
+            margin: 0 0 10px 0;
+            text-shadow: 2px 2px 0 #000;
+            text-align: center;
+        }
+        .profile-info h2 {
+            font-size: 1.1em;
+            color: #fff;
+            margin: 0 0 10px 0;
+            font-weight: normal;
+            text-align: center;
+        }
+        .profile-info .mascot {
+            font-size: 1em;
+            color: #ffcc00;
+            font-weight: bold;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .about-section, .fun-facts, .top-friends {
+            background: #111;
+            border: 2px solid #00ccff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 8px #00ccff44;
+        }
+        .about-section h3, .fun-facts h3, .top-friends h3 {
+            color: #00ccff;
+            margin-top: 0;
+            text-shadow: 1px 1px 0 #000;
+        }
+        .fun-facts ul {
+            list-style: square inside;
+            padding-left: 0;
+        }
+        .top-friends-list {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .top-friend {
+            text-align: center;
+            width: 110px;
+        }
+        .top-friend img {
+            width: 80px;
+            height: 80px;
+            border-radius: 8px;
+            border: 2px solid #fff;
+            margin-bottom: 8px;
+        }
+        .footer {
+            text-align: center;
+            color: #00ccff;
+            font-size: 0.9em;
+            margin-top: 30px;
+            text-shadow: 1px 1px 0 #000;
+            width: 100%;
+        }
+        a {
+            color: #ffcc00;
+            text-decoration: underline;
+        }
+        a:hover {
+            color: #fff;
+        }
+        @keyframes dance {
+            0%   { transform: rotate(-2deg) scale(1) translateY(0); }
+            10%  { transform: rotate(2deg) scale(1.05) translateY(-5px);}
+            20%  { transform: rotate(-4deg) scale(1.08) translateY(5px);}
+            30%  { transform: rotate(4deg) scale(1.1) translateY(-8px);}
+            40%  { transform: rotate(-2deg) scale(1.05) translateY(8px);}
+            50%  { transform: rotate(0deg) scale(1.12) translateY(0);}
+            60%  { transform: rotate(2deg) scale(1.05) translateY(-5px);}
+            70%  { transform: rotate(-4deg) scale(1.08) translateY(5px);}
+            80%  { transform: rotate(4deg) scale(1.1) translateY(-8px);}
+            90%  { transform: rotate(-2deg) scale(1.05) translateY(8px);}
+            100% { transform: rotate(0deg) scale(1) translateY(0);}
+        }
+        .dance {
+            animation: dance 1s 23 linear;
+        }
+        @media (max-width: 900px) {
+            .myspace-container {
+                flex-direction: column;
+                width: 98vw;
+                padding: 10px;
+            }
+            .left-column, .right-column {
+                width: 100%;
+            }
+            .top-friends-list {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="myspace-container" id="myspace-container">
+        <div class="left-column">
+            <div class="profile-header">
+                <div class="profile-pic">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                        <img src="./bryan2.jpg" alt="Bryan Shufelt">
+                    </a>
+                </div>
+                <div class="profile-info">
+                    <h1>Bryan Shufelt</h1>
+                    <h2>The Best Chef, Mentor, Personal Trainer, and Bryan on the Planet</h2>
+                    <div class="mascot">🏆 Mascot for Ellerslie 5-Week Classic 🏆</div>
+                </div>
+            </div>
+            <div class="about-section">
+                <h3>About Me</h3>
+                <p>
+                    Welcome to the official MySpace tribute for Bryan Shufelt! Whether he's in the kitchen, the gym, or inspiring others, Bryan brings unmatched energy, wisdom, and style. As the legendary mascot for the Ellerslie 5-Week Classic, Bryan is the heart and soul of every event he touches.
+                </p>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="fun-facts">
+                <h3>Fun Facts</h3>
+                <ul>
+                    <li>Can whip up a gourmet meal with just five ingredients.</li>
+                    <li>Motivates everyone to reach their fitness goals.</li>
+                    <li>Mentors with patience, humor, and a dash of tough love.</li>
+                    <li>Has the best collection of ties (stars & stripes, anyone?).</li>
+                    <li>Once ran a 5K in a mascot suit and still won.</li>
+                    <li>Random Fact: Bryan was Chuck Norris's mentor. Chuck Norris can do pushups, but only because Bryan taught him how.</li>
+                </ul>
+            </div>
+            <div class="top-friends">
+                <h3>Top Friends</h3>
+                <div class="top-friends-list">
+                    <div class="top-friend">
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                            <img src="./bryan.jpg" alt="Dumbbell">
+                        </a>
+                        <div>Dumbbell</div>
+                    </div>
+                    <div class="top-friend">
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                            <img src="./bryan.jpg" alt="Mentor Book">
+                        </a>
+                        <div>Mentor Person Man</div>
+                    </div>
+                    <div class="top-friend">
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                            <img src="./bryan3.jpg" alt="Chef">
+                        </a>
+                        <div>Chef Guy</div>
+                    </div>
+                    <div class="top-friend">
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                            <img src="./bryan.jpg" alt="Bryan">
+                        </a>
+                        <div>BrIan</div>
+                    </div>
+                </div>
+            </div>
+            <div class="surprise-section" style="background:#111; border:2px solid #ffcc00; border-radius:8px; padding:20px; margin-top:20px; box-shadow:0 0 8px #ffcc0044; text-align:center;">
+                <h3 style="color:#ffcc00; text-shadow:1px 1px 0 #000;">Surprise for Bryan</h3>
+                <button onclick="document.getElementById('bryan-audio').play();" style="background:#00ccff; color:#222; font-size:1.1em; border:none; border-radius:5px; padding:10px 20px; cursor:pointer; font-weight:bold;">
+                    Click for a Surprise!
+                </button>
+                <audio id="bryan-audio" src="./bryan.mp3"></audio>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2024 Bryan Shufelt Fan Page | Made with <span style="color:#ffcc00;">&#10084;</span> in MySpace spirit
+    </div>
+    <script>
+        const audio = document.getElementById('bryan-audio');
+        const container = document.getElementById('myspace-container');
+        audio.addEventListener('play', () => {
+            container.classList.add('dance');
+        });
+        audio.addEventListener('pause', () => {
+            container.classList.remove('dance');
+        });
+        audio.addEventListener('ended', () => {
+            container.classList.remove('dance');
+        });
+    </script>
+</body>
+</html>
