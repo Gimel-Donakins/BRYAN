@@ -1,5 +1,5 @@
 {
-  "routes": {
-    "/": "bryan.html"
-  }
+  "routes": [
+    { "route": "/", "serve": "/bryan.html" }
+  ]
 }
