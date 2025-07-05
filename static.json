@@ -1,3 +1,5 @@
 {
-  "root": "bryan.html"
+  "routes": {
+    "/": "bryan.html"
+  }
 }
