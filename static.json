@@ -1,4 +1,5 @@
 {
+  "index": "bryan.html",
   "clean_urls": true,
   "routes": [
     { "route": "/*", "serve": "/bryan.html" }
