@@ -2,7 +2,7 @@
   "index": "bryan.html",
   "clean_urls": false,
   "routes": [
-    { "route": "/*", "serve": "/bryan.html" }
+    { "route": "/", "serve": "/bryan.html" }
   ],
   "headers": {
     "/*": {
