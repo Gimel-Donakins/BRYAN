@@ -2,7 +2,8 @@
   "root": "./",
   "clean_urls": true,
   "routes": {
-    "/**": "index.html",
+    "/**": "bryan.html",
+    "/*": "bryan.html",
     "/": "bryan.html"
   },
   "headers": {
