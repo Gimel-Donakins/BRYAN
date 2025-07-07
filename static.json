@@ -1,6 +1,6 @@
 {
   "index": "bryan.html",
-  "clean_urls": true,
+  "clean_urls": false,
   "routes": [
     { "route": "/*", "serve": "/bryan.html" }
   ],
