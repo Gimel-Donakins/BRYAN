@@ -1,5 +1,13 @@
 {
-  "routes": [
-    { "route": "/", "serve": "/bryan.html" }
-  ]
+  "root": "./",
+  "clean_urls": true,
+  "routes": {
+    "/**": "index.html",
+    "/": "bryan.html"
+  },
+  "headers": {
+    "/**": {
+      "Cache-Control": "public, max-age=0, must-revalidate"
+    }
+  }
 }
