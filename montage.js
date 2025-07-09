@@ -8,7 +8,7 @@ const montageData = [
     text: `and at 9:30 each night Bryan BANGS down room 325\'s door because Eli once again forgot to check into the building`
   },
   {
-    img: 'bryan5.jpg',
+    img: 'bryan5.png',
     text: `Sean left his milk on the counter, Eli was laying in bed, and Lucas was doing Lucas things`
   },
   {
@@ -16,7 +16,7 @@ const montageData = [
     text: `The Bacon is fryin' thanks to Bryan`
   },
   {
-    img: 'bryan6.jpg',
+    img: 'bryan6.png',
     text: `The weights are flyin', you're the best Bryan`
   },
   {
@@ -32,11 +32,11 @@ const montageData = [
     text: `For the room check we were tryin' but we won thanks to cuz of bryan`
   },
   {
-    img: 'bryan8.jpeg',
+    img: 'bryan2.jpg',
     text: `At Nathan's house through the curtains Bryan be spyin'`
   },
   {
-    img: 'bryan6.jpg',
+    img: 'bryan6.png',
     text: `one day I was walking on the sidewalk when I saw Jesse being carried by the likes of Bryan`
   },
   {
