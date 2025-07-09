@@ -166,7 +166,7 @@ function startMontage() {
             overlay.style.opacity = '1';
           }, 50);
         }
-      }, 1500);
+      }, 1000);
     }, 93000);
   }, 700);
 }
