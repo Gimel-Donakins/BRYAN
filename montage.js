@@ -153,6 +153,7 @@ function startMontage() {
           overlay.style.zIndex = '99999';
           overlay.style.opacity = '0';
           overlay.style.transition = 'opacity 1.5s';
+          overlay.style.overflow = 'auto'; // allow scrolling
           overlay.onload = function() {
             setTimeout(() => {
               overlay.style.opacity = '1';

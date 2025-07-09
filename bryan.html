@@ -6,7 +6,21 @@
   <title>Bryan: The Legend</title>
   <link rel="stylesheet" href="style.css">
   <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background: rgba(191,167,111,0.98);
+      color: #222;
+      font-family: 'Courier New', Courier, monospace;
+      min-height: 100vh;
+      width: 100vw;
+      box-sizing: border-box;
+      overflow-x: hidden;
+    }
     #bryan-overlay {
+      min-height: 100vh;
+      min-width: 100vw;
       position: fixed;
       top: 0; left: 0; right: 0; bottom: 0;
       background: rgba(191,167,111,0.98);
@@ -18,8 +32,10 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      font-family: 'Courier New', Courier, monospace;
+      justify-content: flex-start;
+      padding: 5vw 4vw 8vw 4vw;
+      box-sizing: border-box;
+      overflow-y: auto;
     }
     #bryan-overlay.visible {
       opacity: 1;
@@ -32,6 +48,7 @@
       box-shadow: 0 4px 32px #bfa76f99;
       padding: 2.5rem 2rem;
       text-align: center;
+      margin: 2rem auto 3rem auto;
     }
     .bryan-content h1 {
       font-size: 2.7rem;
@@ -43,12 +60,28 @@
       margin: 2rem auto;
       font-size: 1.2rem;
       color: #222;
+      padding-left: 1.2em;
     }
     .bryan-content img {
       width: 120px;
       border-radius: 12px;
       margin: 0.5rem;
       box-shadow: 0 2px 12px #bfa76f55;
+    }
+    @media (max-width: 700px) {
+      #bryan-overlay {
+        padding: 7vw 2vw 12vw 2vw;
+      }
+      .bryan-content {
+        padding: 1.2rem 0.5rem;
+        margin: 1rem auto 2rem auto;
+      }
+      .bryan-content h1 {
+        font-size: 2rem;
+      }
+      .bryan-content img {
+        width: 80px;
+      }
     }
   </style>
 </head>
