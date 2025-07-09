@@ -32,7 +32,7 @@ const montageData = [
     text: `For the room check we were tryin' but we won thanks to cuz of bryan`
   },
   {
-    img: 'bryan8.jpg',
+    img: 'bryan2.jpg',
     text: `At Nathan's house through the curtains Bryan be spyin'`
   },
   {
@@ -53,7 +53,6 @@ const montageData = [
 
 let current = 0;
 let audio;
-let recording = false;
 let lastTime = null;
 // Intervals in ms between lyric switches, user-provided:
 const intervals = [9584,11014,13978,4993,5013,5081,5060,5051,5889,5360,5826,12672,19061,4902,2494];
@@ -111,11 +110,9 @@ function startMontage() {
   setTimeout(() => {
     document.getElementById('start-screen').style.display = 'none';
     document.getElementById('montage').style.display = 'flex';
-    document.getElementById('record-btn').style.display = 'none'; // Hide record button when using intervals
     showMontageItem(0, false);
     audio = new Audio('bryan.mp3');
     audio.play();
-    recording = false;
     lastTime = Date.now();
     // Start auto-advance using intervals
     let idx = 0;
@@ -171,21 +168,6 @@ function startMontage() {
   }, 700);
 }
 
-function recordInterval() {
-  if (!recording) return;
-  const now = Date.now();
-  if (lastTime) {
-    const interval = now - lastTime;
-    intervals.push(interval);
-    console.log('Interval:', interval, 'ms');
-    // Optionally, log all intervals as JSON:
-    console.log('All intervals:', JSON.stringify(intervals));
-  }
-  lastTime = now;
-  nextMontageItem();
-}
-
 document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('start-screen').addEventListener('click', startMontage);
-  document.getElementById('record-btn').addEventListener('click', recordInterval);
 });
