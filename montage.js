@@ -32,7 +32,7 @@ const montageData = [
     text: `For the room check we were tryin' but we won thanks to cuz of bryan`
   },
   {
-    img: 'bryan2.jpg',
+    img: 'bryan8.jpg',
     text: `At Nathan's house through the curtains Bryan be spyin'`
   },
   {
