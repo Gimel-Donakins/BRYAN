@@ -16,7 +16,7 @@ const montageData = [
     text: `The Bacon is fryin' thanks to Bryan`
   },
   {
-    img: 'bryan4.jpg',
+    img: 'bryan6.png',
     text: `The weights are flyin', you're the best Bryan`
   },
   {
@@ -24,7 +24,7 @@ const montageData = [
     text: `Chuck Norris is sighing, pretty cool Bryan`
   },
   {
-    img: 'bryan4.jpg',
+    img: 'bryan7.jpeg',
     text: `One day I was cryin' but no more because Bryan`
   },
   {
